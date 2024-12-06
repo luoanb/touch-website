@@ -21,7 +21,10 @@ export const Navbar = () => {
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit mr-2">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
+          <NextLink
+            className="flex justify-start items-center gap-1 w-[160px]"
+            href="/"
+          >
             <img alt="logo" className="p-2 w-[80px]" src="/logo.png" />
             <p className="font-bold text-inherit">快速点击助手</p>
           </NextLink>
