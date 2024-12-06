@@ -15,6 +15,8 @@ import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, DownloadIcon } from "@/components/icons";
+import { Chip } from "@nextui-org/chip";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export const Navbar = () => {
   return (
@@ -29,7 +31,7 @@ export const Navbar = () => {
             <p className="font-bold text-inherit">快速点击助手</p>
           </NextLink>
         </NavbarBrand>
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
+        <div className="hidden lg:flex gap-4 justify-start ml-2 w-[500px]">
           <p className="text-small light:text-gray-500 dark:text-gray-400 ml-2">
             Chrome插件-网页快捷操作助手, 可实现短时间内快手连续点击加速.
           </p>
@@ -40,6 +42,37 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
+        <NavbarMenuItem>
+          <Tooltip content="正在开发中, 敬请期待">
+            <Link
+              target="_blank"
+              color={"foreground"}
+              href="#"
+              onClick={
+                (e) => e.preventDefault()
+                // message
+              }
+              size="lg"
+              className="flex items-center"
+            >
+              <span className="mr-1">社区</span>
+            </Link>
+          </Tooltip>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            target="_blank"
+            color={"foreground"}
+            href={siteConfig.links.installation}
+            size="lg"
+            className="flex items-center"
+          >
+            <span className="mr-1">安装教程</span>
+            <Chip color="default" size="sm">
+              外部
+            </Chip>
+          </Link>
+        </NavbarMenuItem>
         <NavbarItem className="hidden sm:flex gap-2">
           <ThemeSwitch />
         </NavbarItem>
@@ -84,6 +117,37 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))} */}
+          <NavbarMenuItem>
+            <Tooltip content="正在开发中, 敬请期待">
+              <Link
+                target="_blank"
+                color={"foreground"}
+                href="#"
+                onClick={
+                  (e) => e.preventDefault()
+                  // message
+                }
+                size="lg"
+                className="flex items-center"
+              >
+                <span className="mr-1">社区</span>
+              </Link>
+            </Tooltip>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              target="_blank"
+              color={"foreground"}
+              href={siteConfig.links.installation}
+              size="lg"
+              className="flex items-center"
+            >
+              <span className="mr-1">安装教程</span>
+              <Chip color="default" size="sm">
+                外部
+              </Chip>
+            </Link>
+          </NavbarMenuItem>
           <NavbarMenuItem>
             <Link
               color={"foreground"}

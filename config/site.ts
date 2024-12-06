@@ -65,5 +65,6 @@ export const siteConfig = {
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
     download: "/touch-more.crx",
+    installation: "https://get.qiaobuqiao.com/post-600"
   },
 };

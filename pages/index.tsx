@@ -93,7 +93,7 @@ export default function IndexPage() {
             </Container>
             <div className="hidden lg:block">
               <SlideBox
-                className="right-4 absolute -bottom-36 overflow-hidden rounded-lg "
+                className="right-4 xxl:right-[256px] absolute -bottom-36 overflow-hidden rounded-lg "
                 height="800px"
                 width="450px"
               >
