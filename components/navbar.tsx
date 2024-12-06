@@ -48,7 +48,7 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
+            href={siteConfig.links.download}
             startContent={<DownloadIcon className="text-danger" />}
             variant="flat"
           >
@@ -58,16 +58,16 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
+        {/* <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
-        </Link>
+        </Link> */}
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
+          {/* {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={
@@ -83,7 +83,16 @@ export const Navbar = () => {
                 {item.label}
               </Link>
             </NavbarMenuItem>
-          ))}
+          ))} */}
+          <NavbarMenuItem>
+            <Link
+              color={"foreground"}
+              href={siteConfig.links.download}
+              size="lg"
+            >
+              插件下载
+            </Link>
+          </NavbarMenuItem>
         </div>
       </NavbarMenu>
     </NextUINavbar>
