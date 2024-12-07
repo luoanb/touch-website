@@ -65,6 +65,13 @@ export const siteConfig = {
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
     download: "/touch-more.crx",
-    installation: "https://get.qiaobuqiao.com/post-600"
+    installation: "https://get.qiaobuqiao.com/post-600",
+    installationEdge: "https://microsoftedge.microsoft.com/addons/detail/touch-more-%E5%BF%AB%E6%8D%B7%E7%82%B9%E5%87%BB%E5%8A%A9%E6%89%8B/ominbbkclhjiamieoobfmebjfblbeode?hl=zh-CN"
   },
+  browserLinks: {
+    edge: 'https://www.microsoft.com/en-us/edge/download?form=MA13FJ',
+    safe360: 'https://browser.360.cn/se/channel_2.html?package=sembg100031&msclkid=5421c54f5a441e41e3b6a21ca2d72713',
+    chrome: 'https://www.google.com/intl/zh-CN/chrome/',
+    lemur: 'https://lemurbrowser.com/new_version_test/app/zh.html',
+  }
 };

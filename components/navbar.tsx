@@ -39,7 +39,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden xl:flex basis-1/5 xl:basis-full "
         justify="end"
       >
         <NavbarMenuItem>
@@ -53,7 +53,7 @@ export const Navbar = () => {
                 // message
               }
               size="lg"
-              className="flex items-center"
+              className="flex items-center text-small"
             >
               <span className="mr-1">社区</span>
             </Link>
@@ -63,9 +63,23 @@ export const Navbar = () => {
           <Link
             target="_blank"
             color={"foreground"}
+            href={siteConfig.links.installationEdge}
+            size="lg"
+            className="flex items-center text-small"
+          >
+            <span className="mr-1">Edge商店</span>
+            <Chip color="default" size="sm">
+              外部
+            </Chip>
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            target="_blank"
+            color={"foreground"}
             href={siteConfig.links.installation}
             size="lg"
-            className="flex items-center"
+            className="flex items-center text-small"
           >
             <span className="mr-1">安装教程</span>
             <Chip color="default" size="sm">
@@ -90,7 +104,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="xl:hidden basis-1 pl-4" justify="end">
         {/* <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link> */}
@@ -133,6 +147,20 @@ export const Navbar = () => {
                 <span className="mr-1">社区</span>
               </Link>
             </Tooltip>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              target="_blank"
+              color={"foreground"}
+              href={siteConfig.links.installationEdge}
+              size="lg"
+              className="flex items-center"
+            >
+              <span className="mr-1">Edge商店</span>
+              <Chip color="default" size="sm">
+                外部
+              </Chip>
+            </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
             <Link
