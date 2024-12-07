@@ -86,16 +86,16 @@ export default function IndexPage() {
                 页游的顺心陪伴
               </h1>
               <p className="text-white sm:text-2xl text-xl mb-4">
-                还在为你的每天重复的任务花费更多时间吗?
+                还在为你的每天重复的游戏任务花费更多时间吗?
               </p>
               <p className="text-white sm:text-2xl text-xl mb-4">
-                那这款游戏一定适合你
+                那或许可以试试这款工具
               </p>
               <p className="text-white sm:text-2xl text-xl mb-4">
                 你可以自由的根据需求自由的设计各种操作组合,
               </p>
               <p className="text-white sm:text-2xl text-xl mb-4">
-                保存起来让他重复的运行
+                保存起来让它重复的运行
               </p>
             </Container>
             <div className="hidden lg:block">
