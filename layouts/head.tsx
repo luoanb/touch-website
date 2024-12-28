@@ -3,10 +3,10 @@ import NextHead from "next/head";
 
 import { siteConfig } from "@/config/site";
 
-export const Head = () => {
+export const Head = ({ title = siteConfig.name }: { title?: string }) => {
   return (
     <NextHead>
-      <title>{siteConfig.name}</title>
+      <title>{title}</title>
       <meta key="title" content={siteConfig.name} property="og:title" />
       <meta content={siteConfig.description} property="og:description" />
       <meta content={siteConfig.description} name="description" />

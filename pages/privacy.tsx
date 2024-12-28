@@ -1,3 +1,4 @@
+import { Head } from "@/layouts/head";
 import "./privacy.css";
 const privacyhtml = /*html*/ `<div class="typora-export-content">
   <div id="write" class="">
@@ -340,14 +341,17 @@ const privacyhtml = /*html*/ `<div class="typora-export-content">
 
 export default function Privacy() {
   return (
-    <div
-      dangerouslySetInnerHTML={{ __html: privacyhtml }}
-      style={{
-        padding: "16px",
-        maxWidth: 1100,
-        width: "90%",
-        margin: "0 auto",
-      }}
-    />
+    <div>
+      <Head title="Touch More 隐私协议"></Head>
+      <div
+        dangerouslySetInnerHTML={{ __html: privacyhtml }}
+        style={{
+          padding: "16px",
+          maxWidth: 1100,
+          width: "90%",
+          margin: "0 auto",
+        }}
+      />
+    </div>
   );
 }

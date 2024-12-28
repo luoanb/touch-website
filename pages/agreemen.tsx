@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./privacy.css";
+import { Head } from "@/layouts/head";
 const agreementHtml = `<article class="markdown-body">
   <h1>Touch More 用户协议</h1>
   <p>1.导言</p>
@@ -197,14 +198,17 @@ const agreementHtml = `<article class="markdown-body">
 
 export default function Privacy() {
   return (
-    <div
-      dangerouslySetInnerHTML={{ __html: agreementHtml }}
-      style={{
-        padding: "16px",
-        maxWidth: 1100,
-        width: "90%",
-        margin: "0 auto",
-      }}
-    />
+    <div>
+      <Head title="Touch More 用户协议"></Head>
+      <div
+        dangerouslySetInnerHTML={{ __html: agreementHtml }}
+        style={{
+          padding: "16px",
+          maxWidth: 1100,
+          width: "90%",
+          margin: "0 auto",
+        }}
+      />
+    </div>
   );
 }
