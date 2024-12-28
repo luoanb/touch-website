@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import "./privacy.css";
+import privacy from "./privacy.module.css";
 import { Head } from "@/layouts/head";
 const agreementHtml = `<article class="markdown-body">
   <h1>Touch More 用户协议</h1>
@@ -201,6 +200,7 @@ export default function Privacy() {
     <div>
       <Head title="Touch More 用户协议"></Head>
       <div
+        className={privacy.content_box}
         dangerouslySetInnerHTML={{ __html: agreementHtml }}
         style={{
           padding: "16px",

@@ -1,5 +1,5 @@
 import { Head } from "@/layouts/head";
-import "./privacy.css";
+import privacy from "./privacy.module.css";
 const privacyhtml = /*html*/ `<div class="typora-export-content">
   <div id="write" class="">
     <h1 id="Touch More-隐私政策">Touch More 隐私政策</h1>
@@ -344,6 +344,7 @@ export default function Privacy() {
     <div>
       <Head title="Touch More 隐私协议"></Head>
       <div
+        className={privacy.content_box}
         dangerouslySetInnerHTML={{ __html: privacyhtml }}
         style={{
           padding: "16px",
