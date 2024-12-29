@@ -14,12 +14,12 @@ export const websiteInfos = {
 export function moreWebsite(request: NextRequest) {
   const host = request.nextUrl.host;
   const pathname = request.nextUrl.pathname;
-  console.log("pathname", pathname);
-  console.log("pathname", pathname);
+  // console.log("pathname", pathname);
+  // console.log("pathname", pathname);
 
   if (pathname == "/" || pathname == "") {
     const website = OTHER_HOST_PAGES[host];
-    console.log("website", website);
+    // console.log("website", website);
 
 
     if (website) {
