@@ -42,7 +42,7 @@ export const Navbar = () => {
         className="hidden xl:flex basis-1/5 xl:basis-full "
         justify="end"
       >
-        <NavbarMenuItem>
+        {/* <NavbarMenuItem>
           <Tooltip content="正在开发中, 敬请期待">
             <Link
               target="_blank"
@@ -58,7 +58,7 @@ export const Navbar = () => {
               <span className="mr-1">社区</span>
             </Link>
           </Tooltip>
-        </NavbarMenuItem>
+        </NavbarMenuItem> */}
       </NavbarContent>
 
       <NavbarContent className="xl:hidden basis-1 pl-4" justify="end">
@@ -69,7 +69,7 @@ export const Navbar = () => {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
+      {/* <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
           <NavbarMenuItem>
             <Tooltip content="正在开发中, 敬请期待">
@@ -89,7 +89,7 @@ export const Navbar = () => {
             </Tooltip>
           </NavbarMenuItem>
         </div>
-      </NavbarMenu>
+      </NavbarMenu> */}
     </NextUINavbar>
   );
 };

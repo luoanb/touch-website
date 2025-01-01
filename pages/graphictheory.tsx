@@ -129,71 +129,76 @@ export default function IndexPage() {
         </Slide>
         <Slide className="">
           <Container className="pt-32 flex flex-col h-full">
-            <h1 className="sm:text-5xl text-3xl font-bold  mb-8">浏览器推荐</h1>
-            <p className="sm:text-2xl text-xl mb-8">
-              建议从<strong>官方渠道</strong>或成熟的<strong>应用市场</strong>
-              下载所需浏览器, 以下浏览器均有良好的兼容性和性能
-            </p>
-            <p className="sm:text-2xl text-xl mb-2">
-              在电脑上推荐三款浏览器可供选择:{" "}
-            </p>
-            <div className=" sm:text-xl text-medium mb-2">
-              <Link
-                target="_blank"
-                href={siteConfig.browserLinks.edge}
-                className="sm:text-xl text-medium text-medium underline"
-              >
-                Edge浏览器
-              </Link>
-              <Chip color="default" size="sm">
-                外部
-              </Chip>
-              是Window最新的浏览器，可用于替代曾经的IE浏览器
+            <div className="flex-1">
+              <h1 className="sm:text-5xl text-3xl font-bold  mb-8">浏览器推荐</h1>
+              <p className="sm:text-2xl text-xl mb-8">
+                建议从<strong>官方渠道</strong>或成熟的<strong>应用市场</strong>
+                下载所需浏览器, 以下浏览器均有良好的兼容性和性能
+              </p>
+              <p className="sm:text-2xl text-xl mb-2">
+                在电脑上推荐三款浏览器可供选择:{" "}
+              </p>
+              <div className=" sm:text-xl text-medium mb-2">
+                <Link
+                  target="_blank"
+                  href={siteConfig.browserLinks.edge}
+                  className="sm:text-xl text-medium text-medium underline"
+                >
+                  Edge浏览器
+                </Link>
+                <Chip color="default" size="sm">
+                  外部
+                </Chip>
+                是Window最新的浏览器，可用于替代曾经的IE浏览器
+              </div>
+              <div className="sm:text-xl text-medium mb-2">
+                <Link
+                  target="_blank"
+                  href={siteConfig.browserLinks.safe360}
+                  className="sm:text-xl text-medium underline"
+                >
+                  360安全浏览器
+                </Link>
+                <Chip color="default" size="sm">
+                  外部
+                </Chip>
+                360出品, 安全有保障
+              </div>
+              <div className=" sm:text-xl text-medium mb-2">
+                <Link
+                  target="_blank"
+                  href={siteConfig.browserLinks.chrome}
+                  className="sm:text-xl text-medium underline"
+                >
+                  Google Chrome浏览器<span className="text-sm">(需科学上网)</span>
+                </Link>
+                <Chip color="default" size="sm">
+                  外部
+                </Chip>
+                是Google官方出品，支持Windows、Mac、Android、iOS等平台
+              </div>
+              <p className=" sm:text-2xl text-xl mb-2 mt-8">在手机上推荐</p>
+              <div className=" sm:text-xl text-medium mb-2">
+                <Link
+                  target="_blank"
+                  href={siteConfig.browserLinks.safe360}
+                  className="sm:text-xl text-medium underline"
+                >
+                  狐猴浏览器
+                </Link>
+                <Chip color="default" size="sm">
+                  外部
+                </Chip>
+                {/* 是为数不多在安卓手机上支持Chrome插件的浏览器.
+              <strong>请到通过该浏览器在Edge商店内下载安装</strong> */}
+              </div>
             </div>
-            <div className="sm:text-xl text-medium mb-2">
-              <Link
-                target="_blank"
-                href={siteConfig.browserLinks.safe360}
-                className="sm:text-xl text-medium underline"
-              >
-                360安全浏览器
-              </Link>
-              <Chip color="default" size="sm">
-                外部
-              </Chip>
-              360出品, 安全有保障
-            </div>
-            <div className=" sm:text-xl text-medium mb-2">
-              <Link
-                target="_blank"
-                href={siteConfig.browserLinks.chrome}
-                className="sm:text-xl text-medium underline"
-              >
-                Google Chrome浏览器<span className="text-sm">(需科学上网)</span>
-              </Link>
-              <Chip color="default" size="sm">
-                外部
-              </Chip>
-              是Google官方出品，支持Windows、Mac、Android、iOS等平台
-            </div>
-            <p className=" sm:text-2xl text-xl mb-2 mt-8">在手机上推荐</p>
-            <div className=" sm:text-xl text-medium mb-2">
-              <Link
-                target="_blank"
-                href={siteConfig.browserLinks.safe360}
-                className="sm:text-xl text-medium underline"
-              >
-                狐猴浏览器
-              </Link>
-              <Chip color="default" size="sm">
-                外部
-              </Chip>
-              是为数不多在安卓手机上支持Chrome插件的浏览器.
-              <strong>请到通过该浏览器在Edge商店内下载安装</strong>
+            <div className="flex justify-center mb-4">
+              <a href="https://beian.miit.gov.cn">黔ICP备2021002125号-1</a>
             </div>
           </Container>
         </Slide>
-        <Slide>
+        {/* <Slide>
           <Container className="pt-16 flex flex-col h-full">
             <div className="mt-16 flex-1">
               <h1 className="sm:text-5xl text-3xl font-bold mb-8">社区</h1>
@@ -206,7 +211,7 @@ export default function IndexPage() {
               <a href="https://beian.miit.gov.cn">黔ICP备2021002125号-1</a>
             </div>
           </Container>
-        </Slide>
+        </Slide> */}
       </SlideBox>
     </HomeLayout>
   );
